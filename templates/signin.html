@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog - Free Bulma template</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- Bulma Version 0.9.0-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.3/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/blog.css">
+</head>
+
+<body>
+<!-- START NAV -->
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../">
+        <img src="/static/images/bulma.png" alt="Logo">
+      </a>
+      <span class="navbar-burger burger" data-target="navbarMenu">
+                        <span></span>
+                <span></span>
+                <span></span>
+                </span>
+    </div>
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item is-active" href="/signin">
+          Üye Ol
+        </a>
+        <a class="navbar-item" href="/login">
+          Giriş Yap
+        </a>
+
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- END NAV -->
+
+<section class="hero is-success is-fullheight">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <div class="column is-4 is-offset-4">
+        <h3 class="title has-text-black">Login</h3>
+        <hr class="login-hr">
+        <p class="subtitle has-text-black">Please login to proceed.</p>
+        <div class="box">
+          <form action="/signin" method="post">
+            <div class="field">
+              <div class="control">
+                <input class="input is-large" type="email" placeholder="Your Email" autofocus="" name="email" id="email">
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <input class="input is-large" type="text" placeholder="Your Username" autofocus="" name="username" id="username">
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <input class="input is-large" type="password" placeholder="Your Password" name="password" id="password">
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <input class="input is-large" type="password" placeholder="Your Password(Accept)" name="password2" id="password2">
+              </div>
+            </div>
+            <button class="button is-block is-info is-large is-fullwidth" type="submit">Login <i class="fa fa-sign-in" aria-hidden="true"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+
+</html>

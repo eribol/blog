@@ -1,0 +1,20 @@
+[package]
+name = "blog"
+version = "0.1.0"
+edition = "2021"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.0.1"
+actix-files = "*"
+dotenv = "0.15"
+env_logger = "0.9"
+log = "0.4"
+tera = "1.15.0"
+serde = {version = "1.0.137", features = ["derive"]}
+actix-session = "0.5"
+actix-redis = "0.10"
+sqlx = { version = "0.6", features = [ "runtime-actix-rustls", "sqlite"] }
+anyhow = "1.0.58"
+validator = { version = "0.15", features = ["derive"] }
+bcrypt = "0.13.0"
